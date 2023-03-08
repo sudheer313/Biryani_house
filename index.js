@@ -18,7 +18,7 @@ app.get("/menu", (req, res) => {
       price: 8.99,
     },
   ];
-  res.json("menuItems");
+  res.json(menuItems);
 });
 
 //routes for orders
