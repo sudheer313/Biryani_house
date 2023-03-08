@@ -27,9 +27,15 @@ app.get("/menu/2", (req, res) => {
   res.json(menuItems[1]);
 });
 
+//Middleware to parse the request body as JSON
+
+app.use(express.json());
+
 //routes for orders
 app.post("/orders", (req, res) => {
-  res.json({ message: "order palced sucessfully" });
+  const { customerName, menuItem, quantity } = req.body;
+  console.log(`Order received:${quantity} ${menuItem} for ${customerName}`);
+  res.json({ message: "order placed sucesfully" });
 });
 
 app.listen(8080, () => {
