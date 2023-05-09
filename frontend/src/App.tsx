@@ -1,15 +1,21 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import MenuItem from './components/MenuItem';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import MenuItem from "./components/MenuItem";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   const sampleItem = {
     id: 1,
-    name: 'Chicken Biryani',
-    image: 'https://example.com/chicken-biryani.jpg',
-    description: 'Aromatic basmati rice cooked with tender chicken and spices',
-    price: '10.99',
+    name: "Chicken Biryani",
+    image: "https://example.com/chicken-biryani.jpg",
+    description: "Aromatic basmati rice cooked with tender chicken and spices",
+    price: "10.99",
   };
 
   const addToCart = (id: number) => {
@@ -18,8 +24,16 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <MenuItem item={sampleItem} addToCart={addToCart} />
+      <Router>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
