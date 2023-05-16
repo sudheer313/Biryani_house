@@ -23,16 +23,17 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App flex">
       <Router>
-        <Header />
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="ml-64 w-full">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
