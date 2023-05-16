@@ -16,6 +16,7 @@ const Navbar: React.FC = () => {
           <Link to="/about" className="text-white hover:text-teal-200">
             About
           </Link>
+          
         </div>
       </div>
     </nav>

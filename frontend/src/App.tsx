@@ -23,10 +23,10 @@ function App() {
   };
 
   return (
-    <div className="App flex">
+    <div className="App flex-col">
       <Router>
         <Navbar />
-        <div className="ml-64 w-full">
+        <div className="w-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
