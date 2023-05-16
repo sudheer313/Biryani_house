@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import './styles/tailwind.css';
+import './styles/output.css';
 
 
 const root = ReactDOM.createRoot(
@@ -13,4 +13,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
