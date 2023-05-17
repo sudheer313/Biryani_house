@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-sm mt-10">
+    <div className="container mx-auto max-w-md mt-10">
       <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
       <form className="bg-white shadow-sm rounded px-4 py-3">
         <div className="mb-4">
@@ -52,8 +52,11 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button className="bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 border border-blue-700 rounded">
-          Button
+        <button
+          className="bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 border border-blue-700 rounded"
+          type="submit"
+        >
+          Submit
         </button>
       </form>
     </div>
