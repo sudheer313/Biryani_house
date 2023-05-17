@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/tailwind.css";
 function Header() {
   return (
     <header className="bg-indigo-600 text-white py-6">

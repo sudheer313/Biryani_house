@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/tailwind.css";
 
 const Navbar: React.FC = () => {
   return (
     <nav className="bg-teal-500 p-6">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="text-white font-semibold text-xl tracking-tight ">
+        <Link to="/" className="text-white font-semibold text-xl tracking-tight ">
           Biryani House
-        </div>
+        </Link>
         <div className="space-x-4">
           <Link to="/" className="text-white hover:text-teal-200">
             Home

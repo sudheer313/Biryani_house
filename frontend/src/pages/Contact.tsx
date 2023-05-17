@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-md mt-10">
+    <div className="container mx-auto max-w-xs mt-10">
       <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
       <form className="bg-white shadow-sm rounded px-4 py-3">
         <div className="mb-4">
