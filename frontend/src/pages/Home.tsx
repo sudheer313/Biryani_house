@@ -5,9 +5,7 @@ import biryani from "../images/biryani.jpg";
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Welcome to our Restaurant</h1>
-      <img src={biryani} alt="biryani" className="w-full h-auto object-cover"/>
-
+      <img src={biryani} alt="biryani" className="w-full  object-cover  h-80" />
       <p>
         We serve the best food in town. Feel free to browse our menu and place
         your order.
