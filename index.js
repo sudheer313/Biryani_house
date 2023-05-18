@@ -17,6 +17,10 @@ const menuItems = [
   },
 ];
 
+// Route for entire menu
+app.get("/menu", (req, res) => {
+  res.json(menuItems);
+});
 //Route for menu Item 1
 app.get("/menu/1", (req, res) => {
   res.json(menuItems[0]);
