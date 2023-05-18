@@ -17,11 +17,7 @@ const menuItems = [
   },
 ];
 
-// Route for entire menu
-app.get("/menu", (req, res) => {
-  res.json(menuItems);
-});
-//Route for menu Item 1
+// Route for menu Item 1
 app.get("/menu/1", (req, res) => {
   res.json(menuItems[0]);
 });
@@ -29,6 +25,11 @@ app.get("/menu/1", (req, res) => {
 //Route for menu Item 2
 app.get("/menu/2", (req, res) => {
   res.json(menuItems[1]);
+});
+
+// Route for entire menu
+app.get("/menu", (req, res) => {
+  res.json(menuItems);
 });
 
 //Middleware to parse the request body as JSON
